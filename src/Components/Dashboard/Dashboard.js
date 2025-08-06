@@ -1,5 +1,7 @@
 import react from "react";
 import './Dashboard.css';
+import StockWidget from "../StockWidget/StockWidget";
+
 
 const Dashboard = () => {
     
@@ -14,9 +16,8 @@ const Dashboard = () => {
         
 
             <div className="dashboard-grid">
-                <div className="widget stock-widget">
-                    <h3>Stock Portfolio</h3>
-                    <p>Loading Stocks..</p>
+                <div className="widget ">
+                    <StockWidget/>
                 </div>
 
                 <div className="widget weather-widget">
