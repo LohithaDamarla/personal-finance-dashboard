@@ -1,44 +1,49 @@
-import react from "react";
+import React from 'react';
+import StockWidget from '../StockWidget/StockWidget';
+import WeatherWidget from '../WeatherWidget/WeatherWidget';
+import NewsWidget from '../Newswidget/NewsWidget';
+import ExpenseWidget from '../Expensewidget/ExpenseWidget';
 import './Dashboard.css';
-import StockWidget from "../StockWidget/StockWidget";
-
 
 const Dashboard = () => {
-    
-    return (
-        <div className="dashboard">
-            <header className="dashboard-header">
-                <h1>Personal Finance Dashboard </h1>
-                <div className="header-info">
-                    <span>{new Date().toLocaleDateString()}</span>
-                </div>
-            </header>
+  return (
+    <div className="dashboard">
+      <header className="dashboard-header">
+        <h1>Personal Finance Dashboard</h1>
+        <div className="header-info">
+          <span>{new Date().toLocaleDateString()}</span>
+        </div>
+      </header>
+      
+      <div className="dashboard-grid">
+        <div className="widget">
+          <StockWidget />
+        </div>
         
-
-            <div className="dashboard-grid">
-                <div className="widget ">
-                    <StockWidget/>
-                </div>
-
-                <div className="widget weather-widget">
-                    <h3>Weather</h3>
-                    <p>Loading Weather..</p>
-                </div>
-
-                <div className="widget news-widget">
-
-                    <h3>Financial News</h3>
-                    <p>Loading News..</p>
-                </div>
-
-                <div className="widget expense-widget">
-                    <h3>Expense Tracker</h3>
-                    <p>Loading Expenses</p>
-                </div>
-            </div>
-            
-        </div>    
-    )
-}
+        <div className="widget weather-widget-container">
+          <WeatherWidget />
+        </div>
+        
+        <div className="widget">
+          <NewsWidget />
+        </div>
+        
+        <div className="widget">
+          <ExpenseWidget />
+        </div>
+      </div>
+      
+      <footer className="dashboard-footer">
+        <p>Built with ❤️ using React | Real-time data integration | Responsive design</p>
+        <div className="tech-stack">
+          <span>React</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+          <span>APIs</span>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
 export default Dashboard;
