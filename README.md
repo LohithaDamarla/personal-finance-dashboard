@@ -1,6 +1,9 @@
 Personal Finance Dashboard 💰
 A modern, responsive finance dashboard built with React that aggregates your financial data in one beautiful interface.
 
+<img width="1920" height="1018" alt="Screenshot 2025-08-19 170619" src="https://github.com/user-attachments/assets/75cc9fc6-7ed2-455b-9892-fd0f4b4947d9" />
+<img width="1898" height="1009" alt="Screenshot 2025-08-19 170649" src="https://github.com/user-attachments/assets/677ea957-0c6b-4da5-9cce-bf1f07382ad0" />
+
 
 🌟 Features
 
